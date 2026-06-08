@@ -1,5 +1,6 @@
 # Banking-Assistant-Agent
 
+```text
 User
   │
   ▼
@@ -25,3 +26,4 @@ Gemini Generates Final Answer
   │
   ▼
 CLI Displays Response
+```
