@@ -2,28 +2,34 @@
 
 ```text
 User
-  │
-  ▼
-python.py (CLI)
-  │
-  ▼
-agent.py (Gemini Reasoning Engine)
-  │
-  ▼
-Decides Tool
-  │
-  ▼
-tools.py
-  │
-  ▼
+  ↓
+main.py (CLI)
+  ↓
+agent_loop.py
+  ↓
+gemini_client.py
+  ↓
+Gemini API
+  ↓
+Tool Decision
+  ↓
+tools/
+  ↓
 mock_db.py
-  │
-  ▼
-Returns Banking Data
-  │
-  ▼
-Gemini Generates Final Answer
-  │
-  ▼
+  ↓
+Tool Result
+  ↓
+agent_loop.py
+  ↓
+gemini_client.py
+  ↓
+Gemini API
+  ↓
+Final Answer
+  ↓
+agent_loop.py
+  ↓
+main.py (CLI)
+  ↓
 CLI Displays Response
 ```
